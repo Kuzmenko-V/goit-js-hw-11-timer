@@ -5,7 +5,7 @@ class CountdownTimer {
         this.timerElem = document.querySelector(selector);
         this.TimerElemntsId = this.timerElem.querySelectorAll(".value");
         this.timerId = null;
-        this.startTimer = this.start();
+        this.start();
     }
     start() {
         this.timerId = setInterval(() => {
