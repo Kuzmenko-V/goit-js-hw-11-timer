@@ -5,6 +5,7 @@ class CountdownTimer {
         this.timerElem = document.querySelector(selector);
         this.TimerElemntsId = this.timerElem.querySelectorAll(".value");
         this.timerId = null;
+        this.startTimer = this.start();
     }
     start() {
         this.timerId = setInterval(() => {
@@ -29,4 +30,3 @@ class CountdownTimer {
 const timer = new CountdownTimer({
     selector: '#timer-1',
     targetDate: new Date('Jul 17, 2021, 12:03:45')});
-timer.start();
